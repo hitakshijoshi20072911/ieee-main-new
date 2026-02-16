@@ -125,6 +125,72 @@ Future integration ready for:
 
 ---
 
+## 🚀 Deployment Guide
+
+### 🌐 Web Application Deployment
+
+#### Local Development
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Access at: http://localhost:8080
+```
+
+#### Production Build
+```bash
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+#### Environment Setup
+- Node.js 18+ required
+- npm or yarn package manager
+- Modern web browser recommended
+
+---
+
+### 📱 Android Mobile App Deployment
+
+#### Prerequisites
+- Android Studio installed
+- Android SDK configured
+- USB debugging enabled (for physical devices)
+- Java Development Kit (JDK) 17+
+
+#### Local Mobile Deployment
+```bash
+# Build web app and sync with Capacitor
+npm run mobile:build
+
+# Open project in Android Studio
+npm run mobile:android
+
+# Run on connected device/emulator
+npm run mobile:run
+```
+
+#### Mobile App Features
+- **Landscape Orientation**: Locked for optimal viewing experience
+- **Native Android Container**: Wrapped with Capacitor
+- **Touch Optimization**: Enhanced mobile interactions
+- **Hardware Acceleration**: Smooth performance
+- **PWA Capabilities**: Installable as native app
+
+#### APK Generation
+1. Open Android Studio: `npm run mobile:android`
+2. Build → Build Bundle(s)/APK(s) → Build APK(s)
+3. Choose release or debug variant
+4. APK generated in `android/app/build/outputs/apk/`
+
+---
+
 ## 🤖 AI Tools Usage Disclosure
 
 ### I. AI Tools Used
